@@ -1,7 +1,12 @@
 import { ArrowRight } from 'lucide-react';
 
+type PercentageItem = {
+  number: string;
+  desc: string;
+};
+
 export default function Hero() {
-  const Persentage = [
+  const Persentage: PercentageItem[] = [
     {
       number: '150+',
       desc: 'Projects Delivered',
@@ -33,7 +38,7 @@ export default function Hero() {
       <hr className="text-gray-300 w-lg md:w-4xl my-16" />
       <div className="flex justify-between w-md md:w-2xl">
         {Persentage.map((p) => (
-          <div className="flex flex-col items-center">
+          <div key={p.desc} className="flex flex-col items-center">
             <div className="text-white font-semibold text-4xl">{p.number}</div>
             <div className="text-gray-400 text-sm">{p.desc}</div>
           </div>
