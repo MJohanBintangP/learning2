@@ -7,6 +7,15 @@ type TeamsType = {
 };
 
 export default function Team() {
+  const getInitial = (name: string) => {
+    return name
+      .split(" ")
+      .slice(0, 2)
+      .map((word) => word[0])
+      .join("")
+      .toUpperCase();
+  };
+
   const Teams: TeamsType[] = [
     {
       name: "Alexandra Chen",
@@ -48,7 +57,7 @@ export default function Team() {
         {Teams.map((t) => (
           <div className="flex flex-col justify-center items-center gap-2 max-w-xs text-center">
             <div className="bg-gray-400 rounded-xl p-16 font-semibold text-3xl">
-              A1
+              {getInitial(t.name)}
             </div>
             <h1 className="font-semibold text-xl">{t.name}</h1>
             <h2 className="text-yellow-400">{t.role}</h2>
