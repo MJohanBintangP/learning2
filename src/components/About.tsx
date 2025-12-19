@@ -20,22 +20,25 @@ export default function About() {
   ];
 
   return (
-    <section className="py-22 flex justify-center items-center max-w-7xl mx-auto">
+    <section
+      id="about"
+      className="py-22 scroll-mt-12 flex justify-center items-center max-w-7xl mx-auto"
+    >
       <div className="flex flex-col">
-        <div className="flex flex-col text-center items-center justify-center gap-2 mb-16">
+        <div className="flex flex-col items-center justify-center gap-2 mb-16">
           <div className="mb-4 rounded-full px-4 py-1 bg-yellow-200 text-yellow-600 w-fit">
             Who we are
           </div>
-          <h1 className="mb-4 text-black text-5xl font-semibold">
+          <h1 className="mb-4 text-black text-center max-w-xs md:max-w-2xl text-3xl md:text-5xl font-semibold">
             Trusted Partner for <span className="text-yellow-400">Growth</span>
           </h1>
-          <p className="text-md text-gray-400 max-w-2xl">
+          <p className="text-md text-center text-gray-400 max-w-xs md:max-w-2xl">
             For over a decade, Apex has been at the forefront of business
             transformation, delivering results that exceed expectations and
             partnerships that last.
           </p>
         </div>
-        <div className="flex gap-12 mb-32">
+        <div className="flex flex-col md:flex-row gap-6 px-6 md:px-0 md:gap-12 mb-12 md:mb-32">
           {card.map((c) => (
             <div
               key={c.desc}
@@ -49,7 +52,7 @@ export default function About() {
             </div>
           ))}
         </div>
-        <div className="flex flex-row gap-6">
+        <div className="flex px-8 md:px-0 flex-col md:flex-row gap-6">
           <div>
             <h1 className="text-3xl font-semibold mb-6">
               A Legacy of Excellence Since 2012

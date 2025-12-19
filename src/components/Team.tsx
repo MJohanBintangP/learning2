@@ -40,20 +40,23 @@ export default function Team() {
   ];
 
   return (
-    <section className="py-22 bg-gray-50 flex flex-col justify-center items-center">
+    <section
+      id="team"
+      className="scroll-mt-12 py-22 bg-gray-50 flex flex-col justify-center items-center"
+    >
       <div className="flex flex-col justify-center items-center mb-12">
         <div className="mb-6 rounded-full px-4 py-1 bg-yellow-200 text-yellow-600 w-fit">
           Our Leadership
         </div>
-        <h1 className="text-5xl font-semibold mb-6">
+        <h1 className="max-w-xs md:max-w-2xl text-3xl md:text-5xl text-center font-semibold mb-6">
           Meet the <span className="text-yellow-400">Experts</span>
         </h1>
-        <p className="text-lg text-gray-400 max-w-3xl text-center">
+        <p className="text-lg text-gray-400 max-w-xs md:max-w-2xl text-center">
           A diverse team of industry veterans united by a passion for excellence
           and a commitment to your success.
         </p>
       </div>
-      <div className="flex gap-6">
+      <div className="flex flex-col md:flex-row gap-6">
         {Teams.map((t) => (
           <div className="flex flex-col justify-center items-center gap-2 max-w-xs text-center">
             <div className="bg-gray-400 rounded-xl p-16 font-semibold text-3xl">

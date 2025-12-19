@@ -2,21 +2,24 @@ import { Mail, Phone, MapPin, Send } from "lucide-react";
 
 export default function Contact() {
   return (
-    <section className="py-20 mb-12 flex flex-col justify-center items-center px-6">
+    <section
+      id="contact"
+      className="scroll-mt-12 py-20 mb-12 flex flex-col justify-center items-center px-6"
+    >
       <div className="flex flex-col justify-center items-center mb-16">
         <div className="mb-6 rounded-full px-4 py-1 bg-yellow-100 text-yellow-600 w-fit text-sm font-medium uppercase tracking-wider">
           Get in touch
         </div>
-        <h1 className="text-5xl font-bold mb-6">
+        <h1 className="max-w-xs md:max-w-2xl text-center text-3xl md:text-5xl font-bold mb-6">
           Let's Start a <span className="text-yellow-500">Conversation</span>
         </h1>
-        <p className="text-lg text-gray-500 max-w-2xl text-center">
+        <p className="text-lg text-gray-500 max-w-xs md:max-w-2xl text-center">
           Ready to transform your business? We'd love to hear from you. Reach
           out and let's explore the possibilities together.
         </p>
       </div>
 
-      <div className="flex max-w-7xl w-full justify-between gap-12">
+      <div className="flex flex-col md:flex-row max-w-7xl w-full justify-between gap-12">
         {/* Left Section - Contact Information */}
         <div className="flex-1">
           <h2 className="font-bold text-2xl mb-6">Contact Information</h2>

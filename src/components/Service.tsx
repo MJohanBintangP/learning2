@@ -42,20 +42,23 @@ export default function Service() {
   ];
 
   return (
-    <section className="py-22 flex flex-col justify-center items-center max-w-7xl mx-auto">
+    <section
+      id="service"
+      className="scroll-mt-12 py-22 flex flex-col justify-center items-center max-w-7xl mx-auto"
+    >
       <div className="flex flex-col justify-center items-center text-center mb-12">
         <div className="mb-4 rounded-full px-4 py-1 bg-yellow-200 text-yellow-600 w-fit">
           What We Do
         </div>
-        <h1 className="mb-4 text-black text-5xl font-semibold">
+        <h1 className="mb-4 text-black text-center max-w-xs md:max-w-2xl text-3xl md:text-5xl font-semibold">
           Solutions That Transform
         </h1>
-        <p className="text-md text-gray-400 max-w-2xl">
+        <p className="text-md text-gray-400 text-center max-w-xs md:max-w-2xl">
           Comprehensive services designed to address your most pressing
           challenges and unlock new possibilities for your organization.
         </p>
       </div>
-      <div className="grid grid-cols-3 gap-10">
+      <div className="grid px-6 md:px-0 grid-cols-1 md:grid-cols-3 gap-10">
         {cards.map((c) => (
           <div
             key={c.desc}

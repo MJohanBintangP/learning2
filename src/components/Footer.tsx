@@ -19,7 +19,7 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 w-full h-auto">
       <div className="p-16">
-        <div className="flex gap-52">
+        <div className="flex flex-col md:flex-row gap-12 md:gap-52">
           {/* left section */}
           <div className="flex flex-col">
             <a
@@ -44,10 +44,10 @@ export default function Footer() {
           </div>
 
           {/* Right Section */}
-          <div className="flex gap-42">
+          <div className="flex flex-col md:flex-row gap-6 md:gap-42">
             {text.map((t) => (
               <div className="flex flex-col gap-2">
-                <h1 className="text-white font-semibold text-lg mb-4">
+                <h1 className="text-white font-semibold text-lg mb-2 md:mb-4">
                   {t.title}
                 </h1>
                 <div className="flex flex-col gap-2">
@@ -65,8 +65,8 @@ export default function Footer() {
             ))}
           </div>
         </div>
-        <hr className="mt-12 mb-8 border-gray-700" />
-        <div className="flex justify-between items-center">
+        <hr className="mt-6 md:mt-12 mb-8 border-gray-700" />
+        <div className="flex flex-col md:flex-row gap-4 justify-between items-center">
           <h1 className="text-gray-400 text-sm">
             © 2025 Apex Consulting. All rights reserved.
           </h1>
