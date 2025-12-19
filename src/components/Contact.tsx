@@ -2,7 +2,7 @@ import { Mail, Phone, MapPin, Send } from "lucide-react";
 
 export default function Contact() {
   return (
-    <section className="py-20 flex flex-col justify-center items-center px-6">
+    <section className="py-20 mb-12 flex flex-col justify-center items-center px-6">
       <div className="flex flex-col justify-center items-center mb-16">
         <div className="mb-6 rounded-full px-4 py-1 bg-yellow-100 text-yellow-600 w-fit text-sm font-medium uppercase tracking-wider">
           Get in touch
